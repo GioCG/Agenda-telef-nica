@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>favoritaos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fav-style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" >       
+    <div class="fon">
+      <table class="table table-dark ">
+        <thead>
+            <td >Nombre</td>
+             <td>Correo</td>
+             <td>Telefono</td>
+         </thead>
+         <tbody>
+           <tr class="table-active">
+             <td>Chus Ajuchan<a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Chus Ajuchan', 'ChusAjuchan@hotmail.com', '42819131')">Chus Ajuchan</a></td>
+             <td>ChusAjuchan@hotmail.com</td>
+             <td>42819131</td>
+           </tr>
+          <tr>
+             <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Christian Cano', 'ChristianCano@hotmail.com', '58693214')">Christian Cano</a></td>
+             <td>ChristianCano@hotmail.co</td>
+             <td>58693214</td>
+          </tr>
+          <tr>
+             <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Pepito Gameplays', 'PepitoGameplays@hotmail', '98876546')"> Pepito Gameplays</a></td>
+             <td>PepitoGameplays@hotmail</td>
+            <td>98876546</td>
+          </tr>
+        </tbody>
+      </table>    
+      <button type="button" class="btn btn-outline-light" onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/contactos/contactos.html'">Contactos</button>
+    </div>
+  </div>
+  <script src="contactos-Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
