@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contactos</title>
+    <link href="contactos-style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="fon">
-    <table class="table table-dark ">
-      <thead>
-          <td >Nombre</td>
-          <td>Correo</td>
-          <td>Telefono</td>
-      </thead>
-      <tbody>
-        <tr class="table-active">
-          <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;">Pedro</a></td>
-          <td>@</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;">Wasaaa</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;">Larry the Bird</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;">Larry the Bird</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;">Larry the Bird</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>    
-    </table>
-    <button type="button" class="btn btn-outline-dark" onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/perfilUsuario/perfil.html'">Usuario</button>
-    <button type="button" class="btn btn-outline-dark" onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/formulario/form.html'">Agregar</button>
-  </div>   
+  <div class="container" id="contact-info">       
+          <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png"
+           onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/perfilUsuario/perfil.html'"
+           class="img-fluid rounded-start imge" 
+           alt="fondo login">
+          <n>
+            <span id="email-display"></span>
+          </n>
+      
+      <div class="fon">
+      <table class="table table-dark ">
+        <thead>
+            <td >Nombre</td>
+            <td>Correo</td>
+            <td>Telefono</td>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <td>Chus Ajuchan<a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Chus Ajuchan', 'ChusAjuchan@hotmail.com', '42819131')">Chus Ajuchan</a></td>
+            <td>ChusAjuchan@hotmail.com</td>
+            <td>42819131</td>
+          </tr>
+          <tr>
+            <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Christian Cano', 'ChristianCano@hotmail.com', '58693214')">Christian Cano</a></td>
+            <td>ChristianCano@hotmail.co</td>
+            <td>58693214</td>
+          </tr>
+          <tr>
+            <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Luis Cuxun', 'LuisCuxun@hotmail.com', '98654123')">Luis Cuxun</a></td>
+            <td>LuisCuxun@hotmail</td>
+            <td>98654123</td>
+          </tr>
+          <tr>
+            <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Fernando Hernandez', 'FernandoHernandez@hotmail', '65846246')">Fernando Hernandez</a></td>
+            <td>FernandoHernandez@hotmail</td>
+            <td>65846246</td>
+          </tr>
+          <tr>
+            <td><a href="/src/giovannicarrera/Agenda_Contacto/detalleContacto/detalle.html" style="color:aliceblue; text-decoration: none;" onclick="guardarDatosUsuario('Pepito Gameplays', 'PepitoGameplays@hotmail', '98876546')"> Pepito Gameplays</a></td>
+            <td>PepitoGameplays@hotmail</td>
+            <td>98876546</td>
+          </tr>
+        </tbody>    
+      </table>
+      <button type="button" class="btn btn-outline-light" onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/formulario/form.html'">Agregar</button>
+      <button type="button" class="btn btn-outline-light" onclick="window.location.href='/src/giovannicarrera/Agenda_Contacto/favoritos/fav.html'">favoritos</button>
+    </div>   
+  </div>
+  <script src="contactos-Script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
