@@ -1,0 +1,26 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    background-image:url("/assets/image/desktop-wallpaper-blur-background-6z-720-1480-thumbnail.jpg");
+    background-size: cover;
+}
+.fon{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display:flex
+}
+.sombr{
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.5);
+    width: 1000px;
+}
+.imge{
+ position: absolute;
+ top: 40%;
+ left: 18%;
+ width: 250Px;
+ transform: translate(-50%,-50%);
+}
+.a{
+    padding-top: 40px;
+}
