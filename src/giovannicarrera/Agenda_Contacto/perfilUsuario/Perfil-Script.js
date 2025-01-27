@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const email = localStorage.getItem('email');
-    const password = localStorage.getItem('password');
+    const email = sessionStorage.getItem('email');
+    const password = sessionStorage.getItem('password');
 
     if (email && password) {
         document.getElementById('email-display').textContent = email;
