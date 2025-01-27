@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const emailValue = correo.value;
         const passwordValue = contra.value;
-
+ 
         if (emailValue && passwordValue) {
-            localStorage.setItem('email', emailValue);
-            localStorage.setItem('password', passwordValue);
+            sessionStorage.setItem('email', emailValue);
+            sessionStorage.setItem('password', passwordValue);
 
             location.href = '/src/giovannicarrera/Agenda_Contacto/contactos/contactos.html';
         } else {
